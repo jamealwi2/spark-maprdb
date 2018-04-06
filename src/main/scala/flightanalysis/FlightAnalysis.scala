@@ -57,7 +57,7 @@ object FlightAnalysis {
     csvDF.createOrReplaceTempView("flightdata")
     
     // Filtering the necessary information.
-    // We need only subset of fields from the available 27 fields.
+    // We need only subset of fields from the available 29 fields.
     // Also, we need information only for the cancelled flights.
     // Cancelled flights will have 'Cancelled=1'.
     val cancelledFlightsDS: Dataset[CancelledFlights] = spark
